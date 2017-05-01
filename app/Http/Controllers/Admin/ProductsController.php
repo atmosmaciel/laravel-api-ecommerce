@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Product;
+use App\Forms\ProductForm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -26,7 +27,13 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        $form = \FormBuilder::create(ProductForm::class, [
+            'method' => 'POST',
+            'url' => route('admin.products.store')
+        ]);
+
+        $title = "Novo Produto";
+        return view('admin.products.save', compact('form', 'title'));
     }
 
     /**

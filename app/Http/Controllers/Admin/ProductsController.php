@@ -6,6 +6,7 @@ use App\Product;
 use App\Forms\ProductForm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Kris\LaravelFormBuilder\FormBuilder;
 
 class ProductsController extends Controller
 {
@@ -42,9 +43,13 @@ class ProductsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FormBuilder $formBuilder)
     {
-        //
+        $form = $formBuilder->create(ProductForm::class);
+
+        Product::create($form->getFieldValues());
+
+        return redirect()->route('admin.products.index');
     }
 
     /**
@@ -66,7 +71,14 @@ class ProductsController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        $form = \FormBuilder::create(ProductForm::class, [
+            'method' => 'PUT',
+            'url' => route('admin.products.update', ['id' => $product->id]),
+            'model' => $product
+        ]);
+
+        $title = "Editar Produto";
+        return view('admin.products.save', compact('form', 'title'));
     }
 
     /**
@@ -76,9 +88,12 @@ class ProductsController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(FormBuilder $formBuilder, Product $product)
     {
-        //
+        $form = $formBuilder->create(ProductForm::class);
+        $product->fill($form->getFieldValues());
+        $product->save();
+        return redirect()->route('admin.products.index');
     }
 
     /**
@@ -89,6 +104,7 @@ class ProductsController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        return redirect()->route('admin.products.index');
     }
 }

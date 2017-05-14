@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Product;
 use App\Forms\ProductForm;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Kris\LaravelFormBuilder\FormBuilder;
 

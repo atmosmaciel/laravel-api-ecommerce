@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'secret' => env('JWT_SECRET', 'CuDZUnB9Q3R6vkFcTGKkoijweR5ZhzLs'),
+    'secret' => env('JWT_SECRET', 'EC322ynv9nIXqpj1OXcuRTV84MOWEvYg'),
 
     /*
     |--------------------------------------------------------------------------

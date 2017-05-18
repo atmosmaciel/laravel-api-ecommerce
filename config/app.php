@@ -169,6 +169,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         \Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        \Barryvdh\Cors\ServiceProvider::class,
 
         /*
          * Application Service Providers...

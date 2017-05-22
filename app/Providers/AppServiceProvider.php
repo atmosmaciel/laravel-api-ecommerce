@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        \PagSeguro\Library::initialize();
+        \PagSeguro\Configuration\Configure::setLog(true, '/logpath/pagseguro.log');
     }
 }

@@ -14,3 +14,15 @@
 22/05/2017 22:43:40 PagSeguro.Session[info]: Begin
 22/05/2017 22:43:40 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=atmos.mps%40gmail.com&token=19717EBDD4D54B8A80969F35FDD7C9B6
 22/05/2017 22:43:51 PagSeguro.Session[info]: Session ID: 5c79b5406f2a488fa94de84549e346ba
+23/05/2017 00:31:39 PagSeguro.Session[info]: Begin
+23/05/2017 00:31:39 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=atmos.mps%40gmail.com&token=19717EBDD4D54B8A80969F35FDD7C9B6
+23/05/2017 00:31:56 PagSeguro.Session[info]: Session ID: 7473db6410d24580a860150902da1fca
+23/05/2017 04:16:17 PagSeguro.Session[info]: Begin
+23/05/2017 04:16:17 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=atmos.mps%40gmail.com&token=19717EBDD4D54B8A80969F35FDD7C9B6
+23/05/2017 04:16:25 PagSeguro.Session[info]: Session ID: 46f74cc659cb4ea7b1eb252633519bc0
+23/05/2017 04:22:17 PagSeguro.Session[info]: Begin
+23/05/2017 04:22:17 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=atmos.mps%40gmail.com&token=19717EBDD4D54B8A80969F35FDD7C9B6
+23/05/2017 04:22:27 PagSeguro.Session[info]: Session ID: 59cfcaf9faa7413180e8c01b36608a24
+23/05/2017 04:34:03 PagSeguro.Session[info]: Begin
+23/05/2017 04:34:03 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=atmos.mps%40gmail.com&token=19717EBDD4D54B8A80969F35FDD7C9B6
+23/05/2017 04:34:13 PagSeguro.Session[info]: Session ID: 419b8e67e9cc43b0a6e5fc195f804787

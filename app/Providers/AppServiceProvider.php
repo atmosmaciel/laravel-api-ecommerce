@@ -24,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         \PagSeguro\Library::initialize();
-        \PagSeguro\Configuration\Configure::setLog(true, '/logpath/pagseguro.log');
+        \PagSeguro\Configuration\Configure::setEnvironment('sandbox');
+        \PagSeguro\Configuration\Configure::setLog(true, __DIR__.'/logFilename.log');
+        \PagSeguro\Configuration\Configure::setCharset('UTF-8');
     }
 }

@@ -18,11 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => 'cors'], function() {
-	
+
 	Route::post('login', 'Api\AuthenticateController@authenticate');
-	
+
 	Route::group(['middleware' => 'jwt.auth'], function() {
-		
+
 		Route::get('session', 'Api\PagseguroController@getSessionId');
 
 		Route::get('products', 'Api\ProductsController@index');
